@@ -8,7 +8,7 @@ const {
     deleteUser,
     addFriend,
     deleteFriend
-} = require();
+} = require('../../controllers/userController');
 
 // GET route for all users
 router.route('/users')
@@ -24,7 +24,7 @@ router.route('/:userId')
 // routes for friends
 router.route('/:userId/friends/:friendId')
     .get(addFriend)
-    .delete(deleteFriend)
+    .delete(deleteFriend);
 
 
 module.exports = router;
