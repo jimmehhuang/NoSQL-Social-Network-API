@@ -1,6 +1,6 @@
 const {Thought, User} = require('../models');
 
-// api/thoughts
+// /api/thoughts
 const thoughtController = {
 
     // get all thoughts
@@ -20,11 +20,11 @@ const thoughtController = {
     },
     // get one thought by id
     getThoughtById(req, res){
-
+      Thought.findOne()
     },
     // create thought
     createThought(req, res){
-
+      Thought.create()
     },
     // update thought (by id)
     updateThought(req, res){
