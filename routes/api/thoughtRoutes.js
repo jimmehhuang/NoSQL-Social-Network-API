@@ -1,6 +1,5 @@
 const router = require('express').Router();
 
-//*** controller TBD ***
 const {
     getAllThoughts,
     getThoughtById,
