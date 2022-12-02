@@ -1,5 +1,6 @@
 const router = require('express').Router();
 
+// /api/users
 const {
     getAllUsers,
     getUser,
@@ -8,21 +9,21 @@ const {
     deleteUser,
     addFriend,
     deleteFriend
-} = require('../../controllers/userController');
+} = require('../../controllers/user-controller');
 
-// GET route for all users
-router.route('/users')
+// GET/POST route for all users
+router.route('/')
     .get(getAllUsers)
     .post(addUser);
 
 // GET/PUT/DELETE routes for individual users
-router.route('/:userId')
+router.route('/:id')
     .get(getUser)
     .put(updateUser)
     .delete(deleteUser);
 
-// routes for friends
-router.route('/:userId/friends/:friendId')
+// POST/DELETE routes for friends
+router.route('/:id/friends/:friendId')
     .post(addFriend)
     .delete(deleteFriend);
 

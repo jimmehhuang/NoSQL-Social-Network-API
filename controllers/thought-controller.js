@@ -29,7 +29,7 @@ const thoughtController = {
         .sort({ _id: -1 })
         .then(dbThoughtData => {
           if (!dbThoughtData) {
-              res.status(404).json({ message: 'No User found with this id.' });
+              res.status(404).json({ message: 'No thoughts found with this id.' });
           return;
           }
           res.json(dbThoughtData);

@@ -1,6 +1,7 @@
 const {User, Thought} = require('../models');
 
-const userController= {
+// /api/users
+const userController = {
     // /api/users
 
     // GET all users
