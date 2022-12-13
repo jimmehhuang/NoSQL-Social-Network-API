@@ -16,6 +16,9 @@ This app is not deployed. To run the code, close the repo and run on your local 
 ## Usage
 A video is linked below to demonstrate how the social network API functions.
 
+[Untitled_ Dec 12, 2022 8_32 PM.webm](https://user-images.githubusercontent.com/113392613/207212147-264dd33b-e1a1-4ae0-9ce7-64bbf4494f91.webm)
+
+
 ## License
 Refer to license in repo or as below:
 
